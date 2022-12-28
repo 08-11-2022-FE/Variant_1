@@ -44,6 +44,154 @@ a {
   width: 100%;
   margin: 0 auto;
 }
+.why {
+  position: absolute;
+  width: 1920px;
+  height: 704px;
+  left: calc(50% - 1920px / 2);
+  top: 946px;
+  background-image: url(../Images/WhyBackground.png);
+}
+.why__container {
+  position: absolute;
+  width: 1320px;
+  height: 704px;
+  left: calc(50% - 1320px / 2);
+  top: 0px;
+}
+.why__content {
+  position: absolute;
+  width: 648px;
+  height: 324px;
+  left: 0px;
+  top: 190px;
+}
+.content__title {
+  position: absolute;
+  width: 259px;
+  height: 40px;
+  left: 0px;
+  top: 0px;
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.content__text {
+  position: absolute;
+  height: 168px;
+  left: 0px;
+  right: 0px;
+  top: 64px;
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+.content__button {
+  position: absolute;
+  width: 213px;
+  height: 60px;
+  left: 0px;
+  bottom: 0px;
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #5373fd;
+}
+.why__images {
+  position: absolute;
+  width: 424px;
+  height: 456px;
+  left: 900px;
+  top: 20px;
+}
+.images__river {
+  position: absolute;
+  width: 350px;
+  height: 220px;
+  right: 186px;
+  top: 124px;
+}
+.images__mountains {
+  position: absolute;
+  width: 350px;
+  height: 220px;
+  right: 112px;
+  top: 360px;
+}
+
+.info {
+  position: absolute;
+  width: 1920px;
+  height: 306px;
+  left: 0px;
+  top: 1650px;
+  background: #333333;
+}
+.info__list {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: 1320px;
+  height: 306px;
+  left: calc(50% - 1320px / 2 + 1px);
+  top: 0px;
+}
+.list__image {
+  position: absolute;
+  width: 872px;
+  height: 90px;
+  left: calc(50% - 872px / 2);
+  top: 60px;
+  opacity: 0.5;
+  border: none;
+}
+.list__item {
+  position: absolute;
+  width: 424px;
+  height: 139px;
+  top: 107px;
+}
+.search {
+  left: calc(50% - 424px / 2 - 449px);
+}
+.check {
+  left: calc(50% - 424px / 2);
+}
+.like {
+  left: calc(50% - 424px / 2 + 447px);
+}
+.item__image {
+  padding-left: 160px;
+}
+.item__text {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+[class*="__container"] {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+}
 .logo {
    color: #ffffff;
    font-family: "Josefin Sans";
