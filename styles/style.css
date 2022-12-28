@@ -44,6 +44,7 @@ a {
   width: 100%;
   margin: 0 auto;
 }
+/*
 .why {
   position: absolute;
   width: 1920px;
@@ -187,6 +188,7 @@ a {
   text-transform: capitalize;
   color: #ffffff;
 }
+*/
 [class*="__container"] {
   max-width: 1320px;
   width: 100%;
