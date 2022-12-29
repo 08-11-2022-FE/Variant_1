@@ -1,3 +1,4 @@
+/*------general styles-----------------------*/
 @font-face {
   font-family: "Aleo";
   src: url(../fonts/Aleo-Regular.ttf);
@@ -44,172 +45,27 @@ a {
   width: 100%;
   margin: 0 auto;
 }
-/*
-.why {
-  position: absolute;
-  width: 1920px;
-  height: 704px;
-  left: calc(50% - 1920px / 2);
-  top: 946px;
-  background-image: url(../Images/WhyBackground.png);
-}
-.why__container {
-  position: absolute;
-  width: 1320px;
-  height: 704px;
-  left: calc(50% - 1320px / 2);
-  top: 0px;
-}
-.why__content {
-  position: absolute;
-  width: 648px;
-  height: 324px;
-  left: 0px;
-  top: 190px;
-}
-.content__title {
-  position: absolute;
-  width: 259px;
-  height: 40px;
-  left: 0px;
-  top: 0px;
-  font-family: "Aleo";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 40px;
-  text-transform: capitalize;
-  color: #ffffff;
-}
-.content__text {
-  position: absolute;
-  height: 168px;
-  left: 0px;
-  right: 0px;
-  top: 64px;
-  font-family: "Josefin Sans";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 28px;
-  letter-spacing: 0.1em;
-  color: #ffffff;
-}
-.content__button {
-  position: absolute;
-  width: 213px;
-  height: 60px;
-  left: 0px;
-  bottom: 0px;
-  font-family: "Aleo";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  color: #ffffff;
-  background: #5373fd;
-}
-.why__images {
-  position: absolute;
-  width: 424px;
-  height: 456px;
-  left: 900px;
-  top: 20px;
-}
-.images__river {
-  position: absolute;
-  width: 350px;
-  height: 220px;
-  right: 186px;
-  top: 124px;
-}
-.images__mountains {
-  position: absolute;
-  width: 350px;
-  height: 220px;
-  right: 112px;
-  top: 360px;
-}
-
-.info {
-  position: absolute;
-  width: 1920px;
-  height: 306px;
-  left: 0px;
-  top: 1650px;
-  background: #333333;
-}
-.info__list {
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  width: 1320px;
-  height: 306px;
-  left: calc(50% - 1320px / 2 + 1px);
-  top: 0px;
-}
-.list__image {
-  position: absolute;
-  width: 872px;
-  height: 90px;
-  left: calc(50% - 872px / 2);
-  top: 60px;
-  opacity: 0.5;
-  border: none;
-}
-.list__item {
-  position: absolute;
-  width: 424px;
-  height: 139px;
-  top: 107px;
-}
-.search {
-  left: calc(50% - 424px / 2 - 449px);
-}
-.check {
-  left: calc(50% - 424px / 2);
-}
-.like {
-  left: calc(50% - 424px / 2 + 447px);
-}
-.item__image {
-  padding-left: 160px;
-}
-.item__text {
-  font-family: "Aleo";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 40px;
-  text-align: center;
-  text-transform: capitalize;
-  color: #ffffff;
-}
-*/
-[class*="__container"] {
-  max-width: 1320px;
-  width: 100%;
-  margin: 0 auto;
-}
 .logo {
-   color: #ffffff;
-   font-family: "Josefin Sans";
-   font-weight: 700;
-   font-size: 24px;
-   text-transform: uppercase;
-   letter-spacing: 0.1em;
-   line-height: 1.17;
+  color: #ffffff;
+  font-family: "Josefin Sans";
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 1.17;
 }
+header,
+section {
+  padding: 0 20px; /*відступи безпеки для попередження злипання з краєм екрана*/
+}
+/*------header-----------------------*/
 .header {
-   width: 100%;
-   background-color: #5373FD;
-   min-height: 84px;
- position: fixed;
-   top: 0;
-   left: 0;
+  width: 100%;
+  background-color: #5373fd;
+  min-height: 84px;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 .header__container {
   display: flex;
@@ -218,21 +74,124 @@ a {
   min-height: 84px;
 }
 .header__list {
-   display: flex;
-   gap: 40px;
-   letter-spacing: 0.1em;
-text-transform: uppercase;
+  display: flex;
+  gap: 40px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 .header__link {
-   color: #ffffff;
-   font-family: "Aleo";
-   font-size: 14px;
-   line-height: 1.43;
+  color: #ffffff;
+  font-family: "Aleo";
+  font-size: 14px;
+  line-height: 1.43;
 }
 .hero {
-   background-image: url(../Images/HeaderBackground.png);
-   background-repeat: no-repeat;
-   background-size: cover;
-   width: 100vw;
-   height: 100vh;
+  background-image: url(../Images/HeaderBackground.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+/*------why-----------------------*/
+.why {
+  width: 100vw;
+  background-image: url(../Images/WhyBackground.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.why__container {
+  display: flex;
+  gap: 10.3%;
+}
+.why__content {
+  width: 49.1%;
+  margin: 190px 0;
+}
+.why__images {
+  width: 40.6%;
+  margin: 124px 0;
+  padding-right: 112px;
+  display: flex;
+  flex-direction: column;
+}
+.image:not(:last-child) {
+  margin-bottom: 16px;
+}
+.images__mountains {
+  align-self: flex-end;
+}
+.content__title {
+  font-family: "Aleo";
+  font-size: 36px;
+  line-height: 1.11;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+.content__text {
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+.content__text p:not(:last-child) {
+  margin-bottom: 44px;
+}
+.content__text p:last-child {
+  margin-bottom: 32px;
+}
+.content__button {
+  width: 213px;
+  height: 60px;
+  font-family: "Aleo";
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #5373fd;
+  background-image: url(../Images/Rectangle-button-bg.svg);
+  background-repeat: no-repeat;
+  border-width: 0;
+  border-style: none;
+}
+/*-----info------------------------*/
+.info {
+  background: #333333;
+  padding: 123px 105px 60px;
+  background-image: url(../Images/Line.svg);
+  background-repeat: no-repeat;
+  background-position: center 15%;
+}
+.info__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+.info__item {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 33.3%;
+}
+.info__text {
+  font-family: "Aleo";
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.info__image {
+  align-self: center;
+  margin-bottom: 20px;
+  background-color: #333333;
+}
+/*-----------------------------*/
+@media screen and (max-width: 900px) {
+  .info__list {
+    flex-direction: column;
+  }
 }
