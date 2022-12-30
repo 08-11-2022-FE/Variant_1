@@ -22,6 +22,11 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Josefin Sans";
+  color: #ffffff;
 }
 h1,
 h2,
@@ -80,7 +85,6 @@ section {
   text-transform: uppercase;
 }
 .header__link {
-  color: #ffffff;
   font-family: "Aleo";
   font-size: 14px;
   line-height: 1.43;
@@ -91,6 +95,76 @@ section {
   background-size: cover;
   width: 100vw;
   height: 100vh;
+  padding-top: 295px;
+}
+.hero__title {
+  font-size: 48px;
+  line-height: 1.08;
+  text-align: center;
+  margin-bottom: 8px;
+  letter-spacing: 0.02em;
+}
+.hero__subtitle {
+  font-family: "Josefin Sans";
+  font-size: 22px;
+  line-height: 1.27;
+  letter-spacing: 0.31em;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.hero__form {
+  width: 647px;
+  height: 60px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.hero__input {
+  height: 100%;
+  width: 490px;
+  border: none;
+  padding-left: 30px;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.2em;
+  appearance: none;
+}
+.hero__button {
+  width: 139px;
+  height: 52px;
+  color: inherit;
+  font-family: "Aleo";
+  font-size: 14px;
+  line-height: 1.43;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background-color: #5373fd;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero__button::before {
+  content: url(../Images/search-little.svg);
+  margin-right: 12px;
+  margin-top: 5px;
+}
+.hero__scroll {
+  display: block;
+  width: 105px;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.2em;
+  margin: 211px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero__scroll::after {
+  content: url(../Images/chevron-down.svg);
+  margin-top: 4px;
 }
 /*------why-----------------------*/
 .why {
@@ -188,10 +262,6 @@ section {
   align-self: center;
   margin-bottom: 20px;
   background-color: #333333;
+  padding-top: 14px;
 }
 /*-----------------------------*/
-@media screen and (max-width: 900px) {
-  .info__list {
-    flex-direction: column;
-  }
-}
